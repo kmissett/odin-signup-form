@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Project Signup Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="banner">
+            <img class="logo" src="odin-lined.png" alt="Logo">
+            <div class="site-title">Odin</div>
+        </div>
+    </header>
+
+    <main>
+        <h1>This is not a real online service!</h1>
+        <p>You know you need something like this in your life to help you realize your deepest dreams.</p> 
+        <h2>Sign up now to get started.</h2>
+
+        <h3>Let's do this!</h3>
+        <form action="" method="">
+            <div class="form-inputs">
+                <div class="formgroup required">
+                    <label for="firstname">First name</label>
+                    <input type="text" name="firstname" id="firstname" required placeholder="e.g., Thor">
+                </div>
+                <div class="formgroup required">
+                    <label for="lastname">Last name</label>
+                    <input type="text" name="lastname" id="lastname" required placeholder="e.g., Odinson">
+                </div>
+                <div class="formgroup required">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required placeholder="e.g., thor@asgard.com">
+                </div>
+                <div class="formgroup">
+                    <label for="phone">Phone number</label>
+                    <input type="tel" name="phone" id="phone" placeholder="e.g., 616-555-1234">
+                </div>
+                <div class="formgroup required">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required placeholder="e.g., Mjoln1r">
+                </div>
+                <div class="formgroup required">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" name="confirm-password" id="confirm-password" required placeholder="e.g., Mjoln1r">
+                </div>
+            </div>
+            <button type="submit">Create Account</button>
+        </form>
+        <p class="log-in">Already have an account? <a href="#">Log in</a></p>
+    </main>
+    <footer>
+        <p class="copyright">Copyright &copy;<span class="year"></span> Kevin Missett</p>
+        <p class="photo-credit">Photo by <a href="https://unsplash.com/@carlamstgo">Carla Santiago</a> from <a href="https://unsplash.com">Unsplash.com</a></p>
+    </footer>
+</body>
+<script>
+    document.querySelector(".year").innerText = new Date().getFullYear()
+</script>
+</html>
